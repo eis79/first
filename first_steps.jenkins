@@ -21,5 +21,11 @@ pipeline {
                 sh 'ssh root@test-HP-ProBook-4540s \'uptime\''
             }
         }
+        
+       stage("Tree step") {
+            steps {
+                sh 'ssh root@test-HP-ProBook-4540s \'ifconfig\'' 
+        
+        
     }
 }
